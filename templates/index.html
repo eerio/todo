@@ -6,7 +6,7 @@
 
 <form method="post">
 	{% for k in things %}
-	<input type="checkbox" name="{{ loop.index }}" > {{ k }} <br>
+	<input type="checkbox" name="{{ loop.index }}" > {{ k[0] }} (set: {{ k[1] }} )<br>
 	{% endfor %}
 	<input type="submit" value="done!">
 </form>
